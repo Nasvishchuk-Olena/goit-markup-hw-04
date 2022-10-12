@@ -65,6 +65,11 @@ img {
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /* header */
 
@@ -161,7 +166,9 @@ a {
 .hero {
   background-color: var(--third-background-color);
   text-align: center;
-  padding: 200px 452px;
+  padding: 200px 0;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -173,6 +180,8 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   min-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero .button {
@@ -196,6 +205,9 @@ a {
 
 /* section2 */
 
+.section {
+  background-color: var (--primary-background-color);
+}
 .section-list {
   display: flex;
   gap: 15px;
@@ -215,11 +227,6 @@ a {
   clip-path: inset(50%);
   margin: -1px;
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 .section-title {
   margin-bottom: 10px;
@@ -234,6 +241,13 @@ img {
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
+}
+
+.icon::before {
+  content: 'hjjg';
+  display: block;
+  height: 120px;
+  background-color: var (--fourth-background-color);
 }
 
 /* section 3 */
