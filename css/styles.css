@@ -4,7 +4,7 @@
   --secondary-title-color: #212121;
   --accent-color: #2196f3;
   --secondary-color: #ffffff;
-  --primary-background-color: #f5f5f5;
+  --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --third-background-color: #2f303a;
   --white-transparent-color: rgba(255, 255, 255, 0.6);
@@ -12,6 +12,7 @@
   --fifth-background-color: rgba(255, 255, 255, 1);
   --border-color: #eeeeee;
   --secondary-border-color: rgba(236, 236, 236, 1);
+  --icon-color: rgba(175, 177, 184, 1);
 }
 
 *,
@@ -39,7 +40,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  max-width: 1600px;
 }
 .container {
   margin-left: auto;
@@ -158,13 +158,23 @@ img {
 .header-flex {
   display: flex;
 }
+.icon-envelope {
+  align-items: center;
+  margin-right: 10px;
+  fill: currentColor;
+}
 
 /* main */
 
 /* hero */
 
 .hero {
-  background-color: var(--third-background-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Img.jpg);
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 200px 0;
   max-width: 1600px;
@@ -205,9 +215,6 @@ img {
 
 /* section2 */
 
-.section {
-  background-color: var (--primary-background-color);
-}
 .section-list {
   display: flex;
   gap: 15px;
@@ -243,11 +250,13 @@ img {
   letter-spacing: 0.03em;
 }
 
-.icon::before {
-  content: 'hjjg';
-  display: block;
+.button-features {
+  background-color: var(--fourth-background-color);
+  width: 270px;
   height: 120px;
-  background-color: var (--fourth-background-color);
+  border: none;
+  margin-bottom: 30px;
+  border: 4px;
 }
 
 /* section 3 */
@@ -258,7 +267,7 @@ img {
 }
 
 .list .item {
-  width: calc((100% - 60px) / 3);
+  width: calc ((100% - 60px) / 3);
 }
 
 .doing .title {
@@ -320,6 +329,30 @@ img {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.soc-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: var(--icon-color);
+}
+/* .soc-icon {fill:var(--icon-color);} */
+
+.soc-link:hover {
+  background-color: var(--accent-color);
+}
+.soc-link:hover .soc-icon {
+  fill: var(--secondary-color);
 }
 
 /* footer */
