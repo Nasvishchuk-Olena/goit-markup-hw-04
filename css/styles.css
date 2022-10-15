@@ -111,14 +111,11 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-left: 94px;
+margin-right: 50px;
+gap: 50px;
 }
 
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-.site-nav .item:first-child {
-  margin-left: 94px;
-}
 
 .contact-link {
   display: flex;
@@ -240,6 +237,9 @@ a {
   text-transform: uppercase;
 }
 .section .caption {
+
+  margin-bottom: 0px;
+
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
@@ -262,7 +262,7 @@ a {
 }
 
 .list .item {
-  width: calc ((100% - 60px) / 3);
+  width: calc((100% - 60px) / 3);
 }
 
 .doing .title {
@@ -549,6 +549,7 @@ a {
   letter-spacing: 0.03em;
 }
 .link-cards {
+
   background-color: var(--fifth-background-color);
   width: 370px;
   border: 1px solid;
@@ -563,10 +564,9 @@ a {
   padding: 0px;
 }
 
-.link-cards {
+.link-cards>.link {
   display: block;
 }
-.link-cards:hover,
-.link-cards:focus {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.link-cards>.link:hover,
+.link-cards>.link:focus {drop-shadow:0px 4px 4px rgba(0, 0, 0, 0.25;
 }
