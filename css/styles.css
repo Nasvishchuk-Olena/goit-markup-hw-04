@@ -13,6 +13,8 @@
   --border-color: #eeeeee;
   --secondary-border-color: rgba(236, 236, 236, 1);
   --icon-color: rgba(175, 177, 184, 1);
+  --button-hero-colour:rgba(33, 150, 243, 1);
+  --button-hero-active:rgba(24, 140, 232, 1);
 }
 
 *,
@@ -181,7 +183,7 @@ gap: 50px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  min-width: 696px;
+  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -193,7 +195,8 @@ gap: 50px;
   padding: 10px 32px;
 
   color: var(--secondary-color);
-  background-color: var(--accent-color);
+
+background-color:var(--button-hero-colour);
   border: none;
   font-family: inherit;
   font-weight: 700;
@@ -201,8 +204,8 @@ gap: 50px;
   line-height: 1.9;
   cursor: pointer;
 }
-.hero .button:hover {
-  color: var(--primary-text-color);
+.hero .button:hover,
+.hero .button:focus {background-color:var(--button-hero-active);
 }
 
 /* section2 */
@@ -246,6 +249,11 @@ gap: 50px;
 }
 
 .button-features {
+display:flex;
+align-items: center;
+justify-content: center;
+
+
   background-color: var(--fourth-background-color);
   width: 270px;
   height: 120px;
@@ -256,6 +264,7 @@ gap: 50px;
 
 /* section 3 */
 
+.doing{padding-bottom: 94px;}
 .doing .list {
   display: flex;
   gap: 30px;
@@ -350,8 +359,9 @@ gap: 50px;
 {
   background-color: var(--accent-color);
 }
-.soc-link:hover .soc-icon {
-  fill: var(--secondary-color);
+.soc-link:hover .soc-icon 
+.soc-link:focus .soc-icon
+{fill: var(--secondary-color);
 }
 
 /* section 5 */
@@ -364,7 +374,8 @@ gap: 50px;
 }
 
 .clients {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .clients-item {
@@ -497,6 +508,9 @@ gap: 50px;
 
   color: var(--secondary-title-color);
   background-color: var(--secondary-background-color);
+  box-shadow: 0px, 2px
+rgba(0, 0, 0, 0.12)
+Effect: Drop shadow;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -568,5 +582,4 @@ gap: 50px;
   display: block;
 }
 .link-cards>.link:hover,
-.link-cards>.link:focus {drop-shadow:0px 4px 4px rgba(0, 0, 0, 0.25;
-}
+.link-cards>.link:focus {box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);}
